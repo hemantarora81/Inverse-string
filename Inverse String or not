@@ -1,0 +1,19 @@
+/Question Write a Java Program to check whether the given array is Mirror Inverse or not.
+package com.company;
+
+public class mirror_inverse {
+    static boolean isMirrorinverse(int arr[]){
+        for (int i = 0;i< arr.length;i++){
+            if (arr[arr[i]]!=i)
+                return false;
+        }
+        return true;
+    }
+    public static void main(String[] args) {
+    int arr[] = {3,4,2,0,1};
+    if (isMirrorinverse(arr))
+        System.out.println("Yes");
+        else
+        System.out.println("No");
+        }
+    }
